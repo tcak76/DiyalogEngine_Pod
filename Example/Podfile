@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DiyalogEngine_Pod_Tests' do
+  pod 'DiyalogEngine_Pod', :path => '../'
+  
+  
+end
