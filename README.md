@@ -1,4 +1,4 @@
-# DiyalogEngine_Pod
+# DiyalogEngine
 
 [![CI Status](https://img.shields.io/travis/tcak76/DiyalogEngine_Pod.svg?style=flat)](https://travis-ci.org/tcak76/DiyalogEngine_Pod)
 [![Version](https://img.shields.io/cocoapods/v/DiyalogEngine_Pod.svg?style=flat)](https://cocoapods.org/pods/DiyalogEngine_Pod)

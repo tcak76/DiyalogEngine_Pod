@@ -1,0 +1,16 @@
+PODS:
+  - DiyalogEngine_Pod (0.1.0)
+
+DEPENDENCIES:
+  - DiyalogEngine_Pod (from `../`)
+
+EXTERNAL SOURCES:
+  DiyalogEngine_Pod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DiyalogEngine_Pod: b962135e009a0e630602128c0d476b483b96950a
+
+PODFILE CHECKSUM: d9da0551e3a07d551e4f5df5762127d7569b4c21
+
+COCOAPODS: 1.10.1

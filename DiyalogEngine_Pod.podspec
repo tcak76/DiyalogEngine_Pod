@@ -8,35 +8,34 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DiyalogEngine_Pod'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DiyalogEngine_Pod.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.version          = '4.4.1'
+  s.summary          = 'DiyalogEngine-iOS SDK for intergration DiyalogEngine Messaging to your apps.'
 
   s.homepage         = 'https://github.com/tcak76/DiyalogEngine_Pod'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tcak76' => 'tcak76@users.noreply.github.com' }
   s.source           = { :git => 'https://github.com/tcak76/DiyalogEngine_Pod.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'DiyalogEngine_Pod/Classes/**/*'
+  s.prepare_command = <<-CMD
+      echo 'fetching DiyalogEngine.framework'
+      curl -OL 'https://diyalog.im/app/pkgs/ios_frameworks/xcode12.5/DiyalogEngine/4.4.1/DiyalogEngine.zip'
+      echo 'unzipping DiyalogEngine.framework'
+      unzip -o -q DiyalogEngine.zip
+      echo 'copying DiyalogEngine.framework to Frameworks'
+      mkdir -p Frameworks
+      rm -fr 'Frameworks/DiyalogEngine.framework'
+      mv DiyalogEngine.framework Frameworks
+      echo 'cleaning files'
+      rm DiyalogEngine.zip
+    CMD
+
+  s.preserve_paths = 'Frameworks'
+
+  s.xcconfig = {
+     "SWIFT_INCLUDE_PATHS" => "$(PROJECT_DIR)/DiyalogEngine-iOS/Frameworks/",
+     "FRAMEWORK_SEARCH_PATHS" => "$(PROJECT_DIR)/DiyalogEngine-iOS/Frameworks/"
+  }
   
-  # s.resource_bundles = {
-  #   'DiyalogEngine_Pod' => ['DiyalogEngine_Pod/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

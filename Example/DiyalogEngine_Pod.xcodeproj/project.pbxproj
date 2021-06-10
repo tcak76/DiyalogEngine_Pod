@@ -12,13 +12,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		31FD561C0B30D2B5AEEE9050 /* DiyalogEngine_Pod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DiyalogEngine_Pod.podspec; path = ../DiyalogEngine_Pod.podspec; sourceTree = "<group>"; };
-		48EBCE18ADB28F5975751595 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		31FD561C0B30D2B5AEEE9050 /* DiyalogEngine_Pod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DiyalogEngine_Pod.podspec; path = ../DiyalogEngine_Pod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		48EBCE18ADB28F5975751595 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5C32543201FCC22B14CF3A5C /* Pods_DiyalogEngine_Pod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiyalogEngine_Pod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* DiyalogEngine_Pod_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiyalogEngine_Pod_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6AD5E3B5F12E26C8BBF9300D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6AD5E3B5F12E26C8BBF9300D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A3A9FB22ED6D2C235944DD40 /* Pods-DiyalogEngine_Pod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiyalogEngine_Pod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DiyalogEngine_Pod_Tests/Pods-DiyalogEngine_Pod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C465A62A8E80AE9C87CC8CF3 /* Pods-DiyalogEngine_Pod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiyalogEngine_Pod_Tests.release.xcconfig"; path = "Target Support Files/Pods-DiyalogEngine_Pod_Tests/Pods-DiyalogEngine_Pod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +95,6 @@
 				A3A9FB22ED6D2C235944DD40 /* Pods-DiyalogEngine_Pod_Tests.debug.xcconfig */,
 				C465A62A8E80AE9C87CC8CF3 /* Pods-DiyalogEngine_Pod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -147,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

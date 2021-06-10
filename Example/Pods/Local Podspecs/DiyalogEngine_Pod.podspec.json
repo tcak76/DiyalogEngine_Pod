@@ -1,0 +1,22 @@
+{
+  "name": "DiyalogEngine_Pod",
+  "version": "0.1.0",
+  "summary": "A short description of DiyalogEngine_Pod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tcak76/DiyalogEngine_Pod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tcak76": "tcak76@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/tcak76/DiyalogEngine_Pod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DiyalogEngine_Pod/Classes/**/*"
+}
